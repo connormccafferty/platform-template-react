@@ -1,0 +1,89 @@
+{
+    "runtime": {
+        "arguments": "--v=1 --inspect",
+        "version": "alpha"
+    },
+    "shortcut": {},
+    "platform": {
+        "uuid": "platform_template-react",
+        "applicationIcon": "https://openfin.github.io/golden-prototype/favicon.ico",
+        "autoShow": false,
+        "providerUrl": "http://localhost:8080/provider",
+        "permissions": {
+            "ExternalWindow": {
+                "wrap": true
+            },
+            "System": {
+                "getAllExternalWindows": true,
+                "launchExternalProcess": true,
+                "readRegistryValue": false,
+                "terminateExternalProcess": true
+            }
+        },
+        "defaultWindowOptions": {
+            "url": "http://localhost:8080/window",
+            "contextMenu": true,
+            "defaultWidth": 600,
+            "defaultHeight": 600,
+            "defaultLeft": 0,
+            "defaultTop": 0,
+            "saveWindowState": false,
+            "backgroundThrottling": true,
+            "minHeight": 445,
+            "minWidth": 354,
+            "experimental": {
+                "analytics": true
+            }
+        },
+        "defaultViewOptions": {
+            "experimental": {
+                "childWindows": true,
+                "analytics": true
+            }
+        },
+        "commands": [
+            {
+                "command": "stack.nextTab",
+                "keys": "Ctrl+Tab"
+            }
+        ]
+    },
+    "snapshot": {
+        "windows": [
+            {
+                "layout": {
+                    "content": [
+                        {
+                            "type": "stack",
+                            "id": "no-drop-target",
+                            "content": [
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "url": "http://localhost:8080/"
+                                    }
+                                },
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "processAffinity": "ps_1",
+                                        "url": "https://cdn.openfin.co/embed-web/chart.html"
+                                    }
+                                },
+                                {
+                                    "type": "component",
+                                    "componentName": "view",
+                                    "componentState": {
+                                        "url": "http://localhost:8080/example-view"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
