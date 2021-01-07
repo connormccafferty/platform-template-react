@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import TitleBar from './TitleBar';
-// import LeftMenu from './LeftMenu';
+import LeftMenu from './LeftMenu';
 // import LayoutForm from './LayoutForm';
 // import SnapshotForm from './SnapshotForm';
 
@@ -19,7 +19,7 @@ const PlatformWindow = () => {
     <div id="of-frame-main">
       <TitleBar />
       <div id="body-container">
-        {/* <LeftMenu className="hidden"></LeftMenu> */}
+        <LeftMenu></LeftMenu>
         <div className="two-sided-container">
           <div id="layout-container" className="face"></div>
           {/* <LayoutForm className="face hidden"></LayoutForm> */}

@@ -93,7 +93,7 @@ const TitleBar = () => {
   };
 
   const toggleMenu = () => {
-    document.querySelector('left-menu').classList.toggle('hidden');
+    document.querySelector('#left-menu').classList.toggle('hidden');
   }
 
   return (
@@ -103,7 +103,7 @@ const TitleBar = () => {
       </div>
       <div id="buttons-wrapper">
         <div className="button" title="Toggle Theme" id="theme-button" onClick={toggleTheme}></div>
-        {/* <div className="button" title="Toggle Sidebar" id="menu-button" onClick={toggleMenu}></div>  / */}
+        <div className="button" title="Toggle Sidebar" id="menu-button" onClick={toggleMenu}></div>
         <div className="button" title="Toggle Layout Lock" id="lock-button" onClick={toggleLockedLayout}></div>
         <div className="button" title="Minimize Window" id="minimize-button" onClick={() => window.fin.me.minimize().catch(console.error)}></div>
         <div className="button" title="Maximize Window" id="expand-button" onClick={() => maxOrRestore().catch(console.error)}></div>
